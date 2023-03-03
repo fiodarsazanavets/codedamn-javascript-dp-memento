@@ -4,7 +4,7 @@ class Caretaker {
     #history = [];
 
     backup() {
-        this.#history.push(this.#textEditor.save());
+        // Saving logic goes here
     }
 
     revert() {
@@ -15,7 +15,7 @@ class Caretaker {
             return;
         }
 
-        this.#textEditor.setState(this.#history.pop());
+        // Revert logic goes here
     }
 
     constructor(textEditor) {
